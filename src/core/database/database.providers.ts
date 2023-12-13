@@ -21,7 +21,7 @@ export const databaseProviders = [
           config = databaseConfig.development;
       }
       const sequelize = new Sequelize(config as SequelizeOptions);
-      sequelize.addModels(['models goes here']);
+      sequelize.addModels([]);
       await sequelize.sync();
       return sequelize;
     },
